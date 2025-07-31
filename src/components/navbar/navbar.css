@@ -1,0 +1,45 @@
+header{
+    background-color: var(--color-navbar-bg);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+header > nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    padding: 18px 0px;
+}
+nav > .left{
+    display: flex;
+    align-items: center;
+    gap: 13rem;
+}
+.left > .logo > h2>span{
+    color: var( --color-accent);
+}
+.left > ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+ul > li> a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.right > .icon{
+    cursor: pointer;
+     font-size: 17px;
+    font-weight: 600;
+}
