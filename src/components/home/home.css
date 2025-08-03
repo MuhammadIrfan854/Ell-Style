@@ -1,0 +1,85 @@
+#home{
+       background: linear-gradient(to right, #fff5f7, #ffe4ec);
+}
+#home-page {
+    width: 90vw;
+    margin: auto;
+    height: calc(90vh - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+#home-page > .left {
+    flex: 1;
+    max-width: 600px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#home-page .left h1 {
+    font-size: 3rem;
+    color: #d6336c;
+    margin-bottom: 20px;
+}
+
+#home-page .left p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#home-page .left button {
+    background-color: #d6336c;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#home-page .left button:hover {
+    background-color: #b92d5d;
+}
+
+#home-page > .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-page .right img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    #home-page {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        height: auto;
+    }
+
+    #home-page .left h1 {
+        font-size: 2.2rem;
+    }
+
+    #home-page .left p {
+        font-size: 1rem;
+    }
+
+    #home-page .right img {
+        max-width: 90%;
+        margin-top: 20px;
+    }
+}

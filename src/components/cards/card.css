@@ -1,0 +1,125 @@
+:root {
+  --color-sale-bg: #ffe4e1;
+  --color-button-bg: #ff6f61;
+  --color-button-hover: #e05548;
+  --card-border: #ffb6b6;
+}
+
+#card {
+  margin-top: 60px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+#card > h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  position: relative;
+}
+
+#card > h1::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #ff6f61;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 90vw;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: center;
+}
+
+.cards > .card {
+  flex: 1 1 250px;
+  max-width: 280px;
+  height: 420px;
+  border: 2px solid var(--card-border);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.cards > .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card > img {
+  height: 75%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 17px 17px 0 0;
+  transition: transform 0.4s ease;
+  background-color: var( --color-card-bg);
+}
+
+.card:hover > img {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 0;
+  color: #222;
+}
+
+.card strong {
+  text-align: center;
+  display: block;
+  font-size: 1.1rem;
+  color: #ff6f61;
+  font-weight: bold;
+}
+
+.shop-sale {
+  width: 80%;
+  max-width: 800px;
+  margin: 80px auto 40px;
+  text-align: center;
+  line-height: 1.6;
+  background-color: var(--color-sale-bg);
+  border-radius: 20px;
+  padding: 40px 30px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.shop-sale h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #d9443f;
+}
+
+.shop-sale > button {
+  background-color: var(--color-button-bg);
+  border: none;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.shop-sale > button:hover {
+  background-color: var(--color-button-hover);
+  transform: scale(1.05);
+}

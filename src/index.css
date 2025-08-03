@@ -1,10 +1,13 @@
-*{
-  margin: 0px;
-  padding: 0px;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: sans-serif;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
 :root {
@@ -16,7 +19,7 @@ body{
   --color-accent-dark: #d19a8d; 
   
   --color-heading: #1a1a1a;
-  --color-card-bg: #ffffff;
+  --color-card-bg: #e2e1e1;
   --color-border: #e0e0e0;
 
   --color-sale-bg: #fef1ef;
